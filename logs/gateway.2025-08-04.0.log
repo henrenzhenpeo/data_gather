@@ -1,0 +1,17 @@
+2025-08-04 16:52:46.345  INFO 17948 --- [           main] o.e.gatewayvn.GatewayVnApplication       : Starting GatewayVnApplication using Java 1.8.0_371 on dafenqidebijibendiannao.local with PID 17948 (/Users/work/zsz/gateway-vn/gateway-vn/target/classes started by dafenqi in /Users/work/zsz/gateway-vn/gateway-vn)
+2025-08-04 16:52:46.348  INFO 17948 --- [           main] o.e.gatewayvn.GatewayVnApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-04 16:52:48.028  INFO 17948 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 15008 (http)
+2025-08-04 16:52:48.037  INFO 17948 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-15008"]
+2025-08-04 16:52:48.037  INFO 17948 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-04 16:52:48.038  INFO 17948 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-04 16:52:48.306  INFO 17948 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-04 16:52:48.306  INFO 17948 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1880 ms
+2025-08-04 16:52:48.426  INFO 17948 --- [           main] o.e.g.configuration.ActivemqConfig       : ActiveMQ Queue Name: default-queue-name
+2025-08-04 16:52:49.091  INFO 17948 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-15008"]
+2025-08-04 16:52:49.121  INFO 17948 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 15008 (http) with context path ''
+2025-08-04 16:52:49.142  INFO 17948 --- [           main] o.e.gatewayvn.GatewayVnApplication       : Started GatewayVnApplication in 3.425 seconds (JVM running for 5.155)
+2025-08-04 16:54:55.779  INFO 17948 --- [http-nio-15008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-04 16:54:55.781  INFO 17948 --- [http-nio-15008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-04 16:54:55.787  INFO 17948 --- [http-nio-15008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-04 16:55:35.284  INFO 17948 --- [http-nio-15008-exec-3] o.e.g.controller.UploadController        : 接收到文件数据:OQC IQC 客诉 字段标准化翻译.xlsx
+2025-08-04 16:56:36.916  INFO 17948 --- [http-nio-15008-exec-5] o.e.g.controller.UploadController        : 接收到文件数据:OQC IQC 客诉 字段标准化翻译.xlsx

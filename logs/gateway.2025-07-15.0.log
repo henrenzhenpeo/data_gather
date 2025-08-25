@@ -1,0 +1,20 @@
+2025-07-15 10:21:04.868  INFO 26889 --- [           main] o.e.gatewayvn.GatewayVnApplication       : Starting GatewayVnApplication using Java 1.8.0_371 on dafenqidebijibendiannao.local with PID 26889 (/Users/work/zsz/gateway-vn/gateway-vn/target/classes started by dafenqi in /Users/work/zsz/gateway-vn/gateway-vn)
+2025-07-15 10:21:04.871  INFO 26889 --- [           main] o.e.gatewayvn.GatewayVnApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-07-15 10:21:06.190  INFO 26889 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 15008 (http)
+2025-07-15 10:21:06.200  INFO 26889 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-15008"]
+2025-07-15 10:21:06.201  INFO 26889 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15 10:21:06.201  INFO 26889 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-07-15 10:21:06.434  INFO 26889 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-15 10:21:06.435  INFO 26889 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1511 ms
+2025-07-15 10:21:06.542  INFO 26889 --- [           main] o.e.g.configuration.ActivemqConfig       : ActiveMQ Queue Name: default-queue-name
+2025-07-15 10:21:07.115  INFO 26889 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-15008"]
+2025-07-15 10:21:07.223  INFO 26889 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 15008 (http) with context path ''
+2025-07-15 10:21:07.265  INFO 26889 --- [           main] o.e.gatewayvn.GatewayVnApplication       : Started GatewayVnApplication in 2.99 seconds (JVM running for 5.189)
+2025-07-15 10:21:58.959  INFO 26889 --- [http-nio-15008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15 10:21:58.960  INFO 26889 --- [http-nio-15008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-15 10:21:58.966  INFO 26889 --- [http-nio-15008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-07-15 10:21:59.087  INFO 26889 --- [http-nio-15008-exec-1] o.e.gatewayvn.controller.DataController  : 接收到广照GZ901S透过率数据: {userInfo={machineCode=testcode1, deviceModel=GZ901S, ip=127.0.0.1, sn=, productCode=code1, projectName=projcet1, shiftName=白班, factory=FCG, processName=雾度, checkName=test1, lineId=OQC03, checkResult=pass, tester=张三, timeScope=12:00-14:00, productModel=model1, standardValue=0-0.8%}, deviceData={}}
+2025-07-15 10:21:59.134  INFO 26889 --- [http-nio-15008-exec-1] o.e.gatewayvn.controller.DataController  : 准备发送数据: {"userInfo":{"machineCode":"testcode1","deviceModel":"GZ901S","ip":"127.0.0.1","sn":"","productCode":"code1","projectName":"projcet1","shiftName":"白班","factory":"FCG","processName":"雾度","checkName":"test1","lineId":"OQC03","checkResult":"pass","tester":"张三","timeScope":"12:00-14:00","productModel":"model1","standardValue":"0-0.8%"},"deviceData":{}}
+2025-07-15 10:21:59.406  INFO 26889 --- [http-nio-15008-exec-1] o.e.gatewayvn.controller.DataController  : 消息已发送到队列: queue://gzgtl_queue
+2025-07-15 10:21:59.407  INFO 26889 --- [http-nio-15008-exec-1] o.e.gatewayvn.controller.DataController  : 准备发送数据到jt通道: {"userInfo":{"machineCode":"testcode1","deviceModel":"GZ901S","ip":"127.0.0.1","sn":"","productCode":"code1","projectName":"projcet1","shiftName":"白班","factory":"FCG","processName":"雾度","checkName":"test1","lineId":"OQC03","checkResult":"pass","tester":"张三","timeScope":"12:00-14:00","productModel":"model1","standardValue":"0-0.8%"},"deviceData":{}}
+2025-07-15 10:21:59.834  INFO 26889 --- [http-nio-15008-exec-1] o.e.gatewayvn.controller.DataController  : 消息已发送到队列: queue://Report_ProductGague_H_The_H_The_Two_Test

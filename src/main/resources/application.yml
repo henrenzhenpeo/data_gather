@@ -1,0 +1,66 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  application:
+#  servlet:
+#    multipart:
+#      max-file-size: 50MB
+#      max-request-size: 50MB
+  activemq:
+    #    broker-url: tcp://192.168.22.129:61616
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    close-timeout: 15s   # 在考虑结束之前等待的时间
+    in-memory: true      # 默认代理URL是否应该在内存中。如果指定了显式代理，则忽略此值。
+    non-blocking-redelivery: false  # 是否在回滚回滚消息之前停止消息传递。这意味着当启用此命令时，消息顺序不会被保留。
+    send-timeout: 0     # 等待消息发送响应的时间。设置为0等待永远。
+    queue-names:
+      - AOI_J10-1_4
+      - AOI_MD_4
+      - tianzun_queue
+      - tianxing_queue
+      - gzwd_queue
+      - gzgtl_queue
+      - jptcj_queue
+      - jptym_queue
+      - sd_queue
+      - casi_queue
+      - zxc_test
+      - Report_ProductGague_J10-1_J10-1-4
+      - Report_ProductGague_A9-3_A9-3
+      - tking_queue
+      - Report_ProductGague_H_The_H_The_Two  # 嘉泰路径
+    topic-name: topic_zxc_test
+    packages:
+      trust-all: true #不配置此项，会报错
+    pool:
+      enabled: true
+      max-connections: 10   #连接池最大连接数
+      idle-timeout: 30000   #空闲的连接过期时间，默认为30秒
+  activemqjt:
+    broker-url: tcp://192.168.110.95:61616
+    user: admin
+    password: admin
+    queue-name: Report_ProductGague_H_The_H_The_Two_Test #嘉泰路径
+server:
+  port: 15008
+swagger:
+  enabled: true
+# netty 配置
+netty:
+  # boss线程数
+  boss: 2
+  # worker线程数
+  worker: 4
+  # 超时时间
+  timeout: 6000
+  # 端口号
+  port: 9999
+  # 备用商品号
+  portSalve: 18026
+  transmit: 192.168.22.129:22
+logging:
+  config: classpath:logback-spring.xml
+upload:
+  base-dir: /Users/dafenqi/Downloads/
